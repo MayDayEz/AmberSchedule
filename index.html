@@ -12,32 +12,40 @@
     .font-mitr {
       font-family: 'Mitr', sans-serif;
     }
+     /* Custom text shadow for outline effect */
+    .text-shadow-black {
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+    }
   </style>
 </head>
-<body class="bg-gradient-to-br from-purple-900 via-indigo-900 to-black text-white min-h-screen flex flex-col items-center justify-center font-mitr">
+<body class="bg-gradient-to-br from-purple-900 via-indigo-900 to-purple-900 text-white min-h-screen flex flex-col items-center justify-center font-mitr">
 
   <div class="max-w-4xl w-full bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-10 text-center">
-    <h1 class="text-4xl font-bold text-center mb-8">📅 AmbermeowSchedule 📅</h1>
+    <h1 class="text-4xl font-bold text-center mb-8 text-shadow-black">📅 AmbermeowSchedule 📅</h1>
     
     <div class="grid grid-cols-2 gap-6">
-      <div class="col-span-2 md:col-span-1 bg-purple-600/30 rounded-xl p-10 shadow-md">
-        <h2 class="text-3xl font-semibold">จันทร์ - พฤหัส / เสาร์</h2>
-        <ul class="mt-4 space-y-2 text-2xl">
+      <div class="col-span-2 md:col-span-1 bg-gradient-to-br from-indigo-900 to-purple-900 rounded-xl p-10 shadow-md">
+        <h2 class="text-3xl font-semibold text-shadow-black">จันทร์ - พฤหัส / เสาร์</h2>
+        <ul class="mt-4 space-y-2 text-2xl text-shadow-black">
           <li>🎮 14:00 - 20:00 🎮</li>
           <li>🎮 22:00 - 02:00 🎮</li>
         </ul>
       </div>
 
-      <div class="col-span-2 md:col-span-1 bg-indigo-600/30 rounded-xl p-10 shadow-md">
-        <h2 class="text-3xl font-semibold ">ศุกร์</h2>
-        <ul class="mt-4 space-y-2 text-2xl">
+      <div class="col-span-2 md:col-span-1 bg-gradient-to-bl from-indigo-900 to-purple-900 rounded-xl p-10 shadow-md">
+        <h2 class="text-3xl font-semibold text-shadow-black">ศุกร์</h2>
+        <ul class="mt-4 space-y-2 text-2xl text-shadow-black">
           <li>🎮 13:00 - 23:00 🎮</li>
         </ul>
       </div>
 
-      <div class="col-span-2 bg-gray-600/30 rounded-xl p-10 shadow-md">
-        <h2 class="text-3xl font-semibold ">อาทิตย์</h2>
-        <p class="mt-4 text-2xl ">❌ หยุด ❌ </p>
+      <div class="col-span-2 bg-gradient-to-b from-purple-900 to-indigo-900 rounded-xl p-10 shadow-md">
+        <h2 class="text-3xl font-semibold text-shadow-black">อาทิตย์</h2>
+        <p class="mt-4 text-2xl text-shadow-black">❌ หยุด ❌ </p>
       </div>
     </div>
   </div>
